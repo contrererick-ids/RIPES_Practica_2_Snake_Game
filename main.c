@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include "ripes_system.h"
 
-//Declaración de la función set_pixel() para encender un LED en la matriz de LEDs 
+//Declaración de la función set_pixel() para encender un LED de una coordenada específica
 void set_pixel(unsigned int x, unsigned int y, unsigned int color);
-//Declaración de la función clear_screen() para apagar un LED en la matriz de LEDs
-void clean_screen();
-//Declaración de la función create_apple() para crear una manzana en la matriz de LEDs
+//Declaración de la función clear_screen() para apagar el LED de una coordenada específica
+void clean_screen(unsigned int x, unsigned int y);
+//Declaración de la función create_snake() para crear la serpiente mediante un matriz de LEDs
 void create_snake(unsigned int x, unsigned int y);
+//Declaración de la función create_apple() para crear una manzana en la matriz
+void create_apple();
 
 void main(){
     //D_PAD_0_UP es igual a 0xf0000db0
